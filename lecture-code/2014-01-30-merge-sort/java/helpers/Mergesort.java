@@ -6,7 +6,7 @@ public class Mergesort {
     this.array = array;
   }
 
-  public String[] sorted() {
+  public String[] sorted() throws Exception{
     int n = this.array.length;
     if(n <= 1) {
         return this.array;
