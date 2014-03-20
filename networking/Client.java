@@ -4,7 +4,8 @@ import java.net.*;
 class Client {
     public static void main(String[] args) {
         try {
-            Socket comm = new Socket("localhost", 1234);
+            int port = Integer.parseInt(args[0]);
+            Socket comm = new Socket("localhost", port);
 
             // talk to the server.
             BufferedReader reader = new BufferedReader(

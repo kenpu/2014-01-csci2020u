@@ -25,7 +25,7 @@ class Server {
 
     public static void main(String[] args) {
         try {
-            ServerSocket main = new ServerSocket(1234);
+            ServerSocket main = new ServerSocket(2000);
 
             while(true) {
                 // accepts incoming clients
